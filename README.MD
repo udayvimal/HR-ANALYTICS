@@ -78,7 +78,7 @@ It helps HR managers and stakeholders answer questions like:
 
 🔗 [**View Dashboard on Tableau Public**](https://public.tableau.com/app/profile/yourprofile) *(replace with your real link)*  
 🔗 [**GitHub Pages Preview**](https://udayvimal.github.io/HR-ANALYTICS/) *(if hosted)*
-DEPLOYED ON ->
+DEPLOYED ON ->https://hranalyticsproject.netlify.app/
 ---
 
 ## 🛠️ How to Use
