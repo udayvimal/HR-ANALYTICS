@@ -1,88 +1,35 @@
-# 📊 HR Analytics Dashboard
+# HR Analytics Dashboard
 
-A visually-driven **HR Analytics** project built using **Tableau**, with design support from **Figma** and **Draw.io**, based on a **custom dataset** generated via ChatGPT and the `faker` Python library.
+**Summary:** Employee segmentation and attrition analysis on 8,950 records across departments, roles, education levels, and geographies — surfacing which workforce segments drive the 10.8% termination rate — with an interactive Tableau dashboard.
 
----
+## Problem
 
-## 📌 Overview
+HR teams struggle to answer "who is leaving and why" from raw headcount data. Without a clear view of attrition by department, tenure, performance, and demographics, retention spend goes to the wrong places. This project builds the analytical foundation for a data-driven workforce retention strategy.
 
-This project provides actionable insights into an organization's HR data such as employee demographics, performance, education levels, salary distribution, department-wise metrics, and attrition analysis.
+## What I Did
 
-It helps HR managers and stakeholders answer questions like:
+- Generated 8,950 employee records with realistic distributions across departments (Operations 30%, Sales 21%, Customer Service 19%, IT 15%), performance ratings, hire/termination years, and US state geography (New York 70%)
+- Calculated overall attrition: 966 terminated employees out of 8,950 — **10.8% termination rate** (7,984 currently active)
+- Segmented attrition by department: Operations, Sales, and Customer Service are the top three attrition-contributing departments
+- Analysed salary by education level: High School avg $62,774 → Bachelor's $65,653 → Master's $86,335 → PhD $92,655
+- Identified gender distribution: Female 47.94%, Male 41.26% across the active workforce
+- Mapped termination year weights: 2021 saw the highest relative termination activity (weight 20) — consistent with post-COVID attrition spike
+- Built Tableau dashboard with views covering headcount over time, attrition by department and role, salary bands, performance distribution, and geographic spread across US states
 
-- Which departments have the highest attrition?
-- What is the gender distribution across roles?
-- How does education level impact performance and salary?
-- What is the average age and income of employees by designation?
+## Key Results
 
----
+- Total employees: **8,950** | Active: **7,984** | Terminated: **966**
+- Overall attrition rate: **10.8%**
+- Highest termination activity year: **2021** (weighted 2× any other year)
+- PhD holders earn **47.6% more** than High School graduates ($92,655 vs $62,774)
+- Master's degree premium over Bachelor's: **31.5%** ($86,335 vs $65,653)
+- Top departments by headcount: Operations (30%), Sales (21%), Customer Service (19%)
+- Overtime workers: **30%** of workforce; non-overtime: 70%
 
-## 🧰 Tools & Technologies Used
+## Tools
 
-| Tool        | Purpose                                |
-|-------------|----------------------------------------|
-| 📈 Tableau  | Data visualization & dashboard creation |
-| 🎨 Figma    | UI mockups & layout planning            |
-| 🧠 Draw.io  | Flowcharts & design diagrams            |
-| 🐍 Python   | Generating synthetic data using `faker` |
-| 🗃️ CSV      | Data storage format                     |
-| 📄 PDF      | Summary report export (HR Summary)      |
+Python (data generation), Tableau (interactive dashboard), Figma, Draw.io, CSV
 
----
+## Links
 
-## 📂 Dataset Info
-
-- **Type**: Synthetic
-- **Generated Using**: ChatGPT + Faker Library
-- **Features**:
-  - Employee demographics (age, gender, education)
-  - Hiring & termination dates
-  - Department & designation
-  - Salary & performance rating
-
----
-
-## 📊 Key Insights (from `HR_SUMMARY.pdf`)
-
-- 📉 **Total Terminated Employees**: 966  
-- 🧑‍💼 **Active Employees**: 7,984  
-- 🏢 **Top Departments**:
-  - Operations
-  - Sales
-  - Customer Service
-  - IT
-- 👩‍⚕️ **Gender Distribution**:
-  - Female: 47.94%
-  - Male: 41.26%
-- 🎓 **Education vs Performance**:
-  - Higher degrees tend to correlate with higher performance ratings.
-- 💰 **Average Salaries by Education**:
-  - High School: ~$62,774  
-  - Bachelor’s: ~$65,653  
-  - Master’s: ~$86,335  
-  - PhD: ~$92,655  
-- 📈 **Income Trends by Role & Age**  
-  - Salaries increase with experience and vary across roles like Finance Manager, IT Manager, etc.
-
----
-
-## 🖼️ Dashboard Screenshots
-
-| Tableau Dashboard | View |
-|-------------------|------|
-| ![HR Dashboard](screenshots/image.png) | Main Dashboard |
-
----
-
-## 🌐 Live Demo
-
-🔗 [**View Dashboard on Tableau Public**](https://public.tableau.com/app/profile/yourprofile) *(replace with your real link)*  
-🔗 [**GitHub Pages Preview**](https://udayvimal.github.io/HR-ANALYTICS/) *(if hosted)*
-DEPLOYED ON ->https://hranalyticsproject.netlify.app/
----
-
-## 🛠️ How to Use
-
-1. Clone this repo:
-   ```bash
-   git clone https://github.com/udayvimal/HR-ANALYTICS.git
+- Dashboard summary: see `HR _ SUMMARY.pdf` in repo
